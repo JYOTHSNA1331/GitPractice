@@ -1,0 +1,155 @@
+html{
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(180deg,rgb(30, 215, 169),rgb(233, 159, 146)60%);
+    margin:0 0
+}
+
+.header{
+    background-color: black;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items: center
+}
+ul{
+    list-style: none;
+    display:flex;
+}
+
+li{
+    margin-left:1em
+}
+
+button{
+    border-radius: 5px;
+    background-color: aliceblue;
+    padding:5px; 
+}
+
+button:hover{
+    background-color: rgb(63, 63, 207);
+}
+
+span{
+    font-size:20px;
+    font-weight: bolder;
+}
+.para,.box3{
+    text-align: center; 
+    padding-top: 15px;
+}
+p{
+    text-align: center;
+    width:300px
+}
+
+#id1{
+    font-size: 30px;
+
+}
+
+#id1:hover{
+    font-size: 50px ;
+    
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    height:300px;
+    flex-wrap: wrap;
+    
+}
+
+img{
+    width:300px;
+    height:150px;
+    
+}
+
+.box{
+    animation: toggle 1s alternate infinite;
+    height:180px
+}
+
+@keyframes toggle{
+   from{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.box1{
+    padding-top: 15px;
+    box-sizing: border-box;
+    border: 5px solid black;
+    border-radius: 15px;
+    background: linear-gradient(180deg,rgb(228, 136, 151),rgb(80, 80, 219),rgb(228, 136, 151));
+}
+
+.box4{
+
+    height:70px;
+    background-color: rgb(167, 162, 156);
+    display:flex;
+    justify-content: center;
+}
+
+.maincont{
+     display: flex;
+     flex-direction:column;
+     gap: 30px;
+}
+
+
+
+@media (max-width:480px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        height:600px;
+        flex-wrap: wrap;
+    }
+
+    img{
+        width:400px;
+        height:150px;
+        
+    }
+    
+    .box{
+        animation: toggle 1s alternate infinite;
+        height:180px
+    }
+
+    .box1{
+        padding-top: 15px;
+        box-sizing: border-box;
+        border: 5px solid black;
+        border-radius: 15px;
+        background: linear-gradient(180deg,rgb(228, 136, 151),rgb(80, 80, 219),rgb(228, 136, 151));
+    }
+    
+    p{
+        text-align: center;
+        width:400px
+    }
+
+    @keyframes toggle{
+       from{
+            opacity: 0;
+            transform: translateY(100px);
+        }
+        to{
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+}
+
